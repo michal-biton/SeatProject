@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RuthProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ClassTbl">
+          <Key>
+            <PropertyRef Name="ClassId" />
+          </Key>
+          <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClassName" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="ConstraintToStudentTbl">
+          <Key>
+            <PropertyRef Name="ConsId" />
+          </Key>
+          <Property Name="ConsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="StudentId" Type="int" />
+          <Property Name="PropId" Type="int" />
+          <Property Name="Is" Type="bit" />
+        </EntityType>
+        <EntityType Name="PropertiesTbl">
+          <Key>
+            <PropertyRef Name="PropId" />
+          </Key>
+          <Property Name="PropId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PropName" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="StudentTbl">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="nchar" MaxLength="30" />
+          <Property Name="LastName" Type="nchar" MaxLength="30" />
+          <Property Name="Grade" Type="int" />
+          <Property Name="ChatRate" Type="int" />
+          <Property Name="LineRecomended" Type="int" />
+          <Property Name="Row" Type="int" />
+          <Property Name="Line" Type="int" />
+          <Property Name="PathImage" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_ConstraintToStudentTbl_PropertiesTbl">
+          <End Role="PropertiesTbl" Type="Self.PropertiesTbl" Multiplicity="0..1" />
+          <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PropertiesTbl">
+              <PropertyRef Name="PropId" />
+            </Principal>
+            <Dependent Role="ConstraintToStudentTbl">
+              <PropertyRef Name="PropId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConstraintToStudentTbl_StudentTbl">
+          <End Role="StudentTbl" Type="Self.StudentTbl" Multiplicity="0..1" />
+          <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentTbl">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="ConstraintToStudentTbl">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="version" Type="int" Mode="In" />
+          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+        </Function>
+        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+          <Parameter Name="owner_id" Type="int" Mode="In" />
+          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="RuthProjectModelStoreContainer">
+          <EntitySet Name="ClassTbl" EntityType="Self.ClassTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ConstraintToStudentTbl" EntityType="Self.ConstraintToStudentTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PropertiesTbl" EntityType="Self.PropertiesTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentTbl" EntityType="Self.StudentTbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_ConstraintToStudentTbl_PropertiesTbl" Association="Self.FK_ConstraintToStudentTbl_PropertiesTbl">
+            <End Role="PropertiesTbl" EntitySet="PropertiesTbl" />
+            <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConstraintToStudentTbl_StudentTbl" Association="Self.FK_ConstraintToStudentTbl_StudentTbl">
+            <End Role="StudentTbl" EntitySet="StudentTbl" />
+            <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RuthProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="ClassTbl">
+          <Key>
+            <PropertyRef Name="ClassId" />
+          </Key>
+          <Property Name="ClassId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClassName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="StudentTbl" Relationship="Self.FK_StudentTbl_ClassTbl" FromRole="ClassTbl" ToRole="StudentTbl" />
+        </EntityType>
+        <EntityType Name="ConstraintToStudentTbl">
+          <Key>
+            <PropertyRef Name="ConsId" />
+          </Key>
+          <Property Name="ConsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="StudentId" Type="Int32" />
+          <Property Name="PropId" Type="Int32" />
+          <Property Name="Is" Type="Boolean" />
+          <NavigationProperty Name="PropertiesTbl" Relationship="Self.FK_ConstraintToStudentTbl_PropertiesTbl" FromRole="ConstraintToStudentTbl" ToRole="PropertiesTbl" />
+          <NavigationProperty Name="StudentTbl" Relationship="Self.FK_ConstraintToStudentTbl_StudentTbl" FromRole="ConstraintToStudentTbl" ToRole="StudentTbl" />
+        </EntityType>
+        <EntityType Name="PropertiesTbl">
+          <Key>
+            <PropertyRef Name="PropId" />
+          </Key>
+          <Property Name="PropId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PropName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="ConstraintToStudentTbl" Relationship="Self.FK_ConstraintToStudentTbl_PropertiesTbl" FromRole="PropertiesTbl" ToRole="ConstraintToStudentTbl" />
+        </EntityType>
+        <EntityType Name="StudentTbl">
+          <Key>
+            <PropertyRef Name="StudentId" />
+          </Key>
+          <Property Name="StudentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Grade" Type="Int32" />
+          <Property Name="ChatRate" Type="Int32" />
+          <Property Name="LineRecomended" Type="Int32" />
+          <Property Name="Row" Type="Int32" />
+          <Property Name="Line" Type="Int32" />
+          <NavigationProperty Name="ClassTbl" Relationship="Self.FK_StudentTbl_ClassTbl" FromRole="StudentTbl" ToRole="ClassTbl" />
+          <NavigationProperty Name="ConstraintToStudentTbl" Relationship="Self.FK_ConstraintToStudentTbl_StudentTbl" FromRole="StudentTbl" ToRole="ConstraintToStudentTbl" />
+          <Property Name="PathImage" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_StudentTbl_ClassTbl">
+          <End Role="ClassTbl" Type="Self.ClassTbl" Multiplicity="0..1" />
+          <End Role="StudentTbl" Type="Self.StudentTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ClassTbl">
+              <PropertyRef Name="ClassId" />
+            </Principal>
+            <Dependent Role="StudentTbl">
+              <PropertyRef Name="Grade" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConstraintToStudentTbl_PropertiesTbl">
+          <End Role="PropertiesTbl" Type="Self.PropertiesTbl" Multiplicity="0..1" />
+          <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PropertiesTbl">
+              <PropertyRef Name="PropId" />
+            </Principal>
+            <Dependent Role="ConstraintToStudentTbl">
+              <PropertyRef Name="PropId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ConstraintToStudentTbl_StudentTbl">
+          <End Role="StudentTbl" Type="Self.StudentTbl" Multiplicity="0..1" />
+          <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StudentTbl">
+              <PropertyRef Name="StudentId" />
+            </Principal>
+            <Dependent Role="ConstraintToStudentTbl">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="RuthProjectEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ClassTbl" EntityType="Self.ClassTbl" />
+          <EntitySet Name="ConstraintToStudentTbl" EntityType="Self.ConstraintToStudentTbl" />
+          <EntitySet Name="PropertiesTbl" EntityType="Self.PropertiesTbl" />
+          <EntitySet Name="StudentTbl" EntityType="Self.StudentTbl" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <AssociationSet Name="FK_StudentTbl_ClassTbl" Association="Self.FK_StudentTbl_ClassTbl">
+            <End Role="ClassTbl" EntitySet="ClassTbl" />
+            <End Role="StudentTbl" EntitySet="StudentTbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConstraintToStudentTbl_PropertiesTbl" Association="Self.FK_ConstraintToStudentTbl_PropertiesTbl">
+            <End Role="PropertiesTbl" EntitySet="PropertiesTbl" />
+            <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ConstraintToStudentTbl_StudentTbl" Association="Self.FK_ConstraintToStudentTbl_StudentTbl">
+            <End Role="StudentTbl" EntitySet="StudentTbl" />
+            <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+          </AssociationSet>
+          <FunctionImport Name="sp_alterdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_creatediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="version" Mode="In" Type="Int32" />
+            <Parameter Name="definition" Mode="In" Type="Binary" />
+          </FunctionImport>
+          <FunctionImport Name="sp_dropdiagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(RuthProjectModel.sp_helpdiagramdefinition_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(RuthProjectModel.sp_helpdiagrams_Result)">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="sp_renamediagram">
+            <Parameter Name="diagramname" Mode="In" Type="String" />
+            <Parameter Name="owner_id" Mode="In" Type="Int32" />
+            <Parameter Name="new_diagramname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_upgraddiagrams" />
+        </EntityContainer>
+        <ComplexType Name="sp_helpdiagramdefinition_Result">
+          <Property Type="Int32" Name="version" Nullable="true" />
+          <Property Type="Binary" Name="definition" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_helpdiagrams_Result">
+          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+          <Property Type="Int32" Name="OwnerID" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RuthProjectModelStoreContainer" CdmEntityContainer="RuthProjectEntities">
+          <EntitySetMapping Name="ClassTbl">
+            <EntityTypeMapping TypeName="RuthProjectModel.ClassTbl">
+              <MappingFragment StoreEntitySet="ClassTbl">
+                <ScalarProperty Name="ClassId" ColumnName="ClassId" />
+                <ScalarProperty Name="ClassName" ColumnName="ClassName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ConstraintToStudentTbl">
+            <EntityTypeMapping TypeName="RuthProjectModel.ConstraintToStudentTbl">
+              <MappingFragment StoreEntitySet="ConstraintToStudentTbl">
+                <ScalarProperty Name="ConsId" ColumnName="ConsId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="PropId" ColumnName="PropId" />
+                <ScalarProperty Name="Is" ColumnName="Is" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PropertiesTbl">
+            <EntityTypeMapping TypeName="RuthProjectModel.PropertiesTbl">
+              <MappingFragment StoreEntitySet="PropertiesTbl">
+                <ScalarProperty Name="PropId" ColumnName="PropId" />
+                <ScalarProperty Name="PropName" ColumnName="PropName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentTbl">
+            <EntityTypeMapping TypeName="RuthProjectModel.StudentTbl">
+              <MappingFragment StoreEntitySet="StudentTbl">
+                <ScalarProperty Name="PathImage" ColumnName="PathImage" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+                <ScalarProperty Name="ChatRate" ColumnName="ChatRate" />
+                <ScalarProperty Name="LineRecomended" ColumnName="LineRecomended" />
+                <ScalarProperty Name="Row" ColumnName="Row" />
+                <ScalarProperty Name="Line" ColumnName="Line" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="RuthProjectModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="RuthProjectModel.Store.sp_alterdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="RuthProjectModel.Store.sp_creatediagram" />
+          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="RuthProjectModel.Store.sp_dropdiagram" />
+          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="RuthProjectModel.Store.sp_helpdiagramdefinition">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RuthProjectModel.sp_helpdiagramdefinition_Result">
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="RuthProjectModel.Store.sp_helpdiagrams">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="RuthProjectModel.sp_helpdiagrams_Result">
+                <ScalarProperty Name="Database" ColumnName="Database" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="RuthProjectModel.Store.sp_renamediagram" />
+          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="RuthProjectModel.Store.sp_upgraddiagrams" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

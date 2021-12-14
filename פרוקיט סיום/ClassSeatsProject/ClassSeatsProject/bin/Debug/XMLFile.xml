@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<school>
+  <class codeName="5">
+    <row numRow="1">
+      <table numTable="1">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="רחוק מיעל           " id="1" />
+        <student name="חני שפירא" />
+        <student name="רות חבשוש" />
+      </table>
+      <table numTable="2">
+        <constraint description="ליד הדלת            " id="0" />
+        <student name="שירה עזרא" />
+        <student name="יעל קצב" />
+      </table>
+      <table numTable="3">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="רחוק מהשקע          " id="1" />
+      </table>
+    </row>
+    <row numRow="2">
+      <table numTable="1">
+        <constraint description="רחוק מיעל           " id="0" />
+      </table>
+      <table numTable="2">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="רחוק מהשקע          " id="1" />
+        <constraint description="אזור המזגן          " id="2" />
+      </table>
+      <table numTable="3">
+        <constraint description="רחוק מהשקע          " id="0" />
+      </table>
+    </row>
+    <row numRow="3">
+      <table numTable="1">
+        <constraint description="רחוק מיעל           " id="0" />
+      </table>
+      <table numTable="2">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="מקום מוסתר          " id="1" />
+        <constraint description="רחוק מיעל           " id="2" />
+        <constraint description="רחוק מהמורה         " id="3" />
+      </table>
+      <table numTable="3">
+        <constraint description="מאחורי עמוד         " id="0" />
+        <constraint description="רחוק מהשקע          " id="1" />
+        <constraint description="רחוק מיעל           " id="2" />
+      </table>
+    </row>
+  </class>
+  <class codeName="4">
+    <row numRow="1">
+      <table numTable="1">
+        <constraint description="מקום מסנוור         " id="0" />
+        <student name="יעל קצב" />
+        <student name="ברכי אביבי" />
+      </table>
+      <table numTable="2">
+        <constraint description="אזור המזגן          " id="0" />
+        <student name="אלישבע גרשוני" />
+        <student name="אפרת אב&quot;ש" />
+      </table>
+      <table numTable="3">
+        <constraint description="אזור המזגן          " id="0" />
+        <student name="יהודית ספינר" />
+        <student name="אפרת יצחקי" />
+      </table>
+    </row>
+  </class>
+  <class codeName="3">
+    <row numRow="1">
+      <table numTable="1">
+        <constraint description="מאחורי עמוד         " id="0" />
+        <constraint description="מקום מסנוור         " id="1" />
+        <student name="מלי שוורץ" />
+        <student name="שירה עזרא" />
+      </table>
+      <table numTable="2">
+        <constraint description="מקום מוסתר          " id="0" />
+        <constraint description="אזור המזגן          " id="1" />
+        <student name="יעלי קלמן" />
+        <student name="יעל קצב" />
+      </table>
+      <table numTable="3">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="אזור המזגן          " id="1" />
+        <student name="מיכל ביטון" />
+        <student name="אלישבע גרשוני" />
+      </table>
+      <table numTable="4">
+        <student name="יהודית ספינר" />
+        <student name="נחמי הלפגוט" />
+      </table>
+    </row>
+    <row numRow="2">
+      <table numTable="1">
+        <constraint description="ליד הדלת            " id="0" />
+        <constraint description="מקום מוסתר          " id="1" />
+        <constraint description="רחוק מהמורה         " id="2" />
+        <student name="ברכי אביבי" />
+        <student name="מירי רייזמן" />
+      </table>
+      <table numTable="2">
+        <student name="גילי גוטרמן" />
+        <student name="אורית וולפסון" />
+      </table>
+      <table numTable="3">
+        <student name="תמר מלול" />
+        <student name="נועה שוכר" />
+      </table>
+      <table numTable="4">
+        <student name="אפרת אבש" />
+        <student name="אפרת יצחקי" />
+      </table>
+    </row>
+    <row numRow="3">
+      <table numTable="1">
+        <student name="חני שפירא" />
+        <student name="תמר רוטשטיין" />
+      </table>
+      <table numTable="2">
+        <student name="תמר כץ" />
+        <student name="רות חבשוש" />
+      </table>
+    </row>
+  </class>
+
+</school>

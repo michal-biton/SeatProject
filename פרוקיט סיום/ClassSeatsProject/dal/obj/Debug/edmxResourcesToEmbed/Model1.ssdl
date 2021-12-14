@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RuthProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ClassTbl">
+    <Key>
+      <PropertyRef Name="ClassId" />
+    </Key>
+    <Property Name="ClassId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClassName" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="ConstraintToStudentTbl">
+    <Key>
+      <PropertyRef Name="ConsId" />
+    </Key>
+    <Property Name="ConsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StudentId" Type="int" />
+    <Property Name="PropId" Type="int" />
+    <Property Name="Is" Type="bit" />
+  </EntityType>
+  <EntityType Name="PropertiesTbl">
+    <Key>
+      <PropertyRef Name="PropId" />
+    </Key>
+    <Property Name="PropId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropName" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="StudentTbl">
+    <Key>
+      <PropertyRef Name="StudentId" />
+    </Key>
+    <Property Name="StudentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="nchar" MaxLength="30" />
+    <Property Name="LastName" Type="nchar" MaxLength="30" />
+    <Property Name="Grade" Type="int" />
+    <Property Name="ChatRate" Type="int" />
+    <Property Name="LineRecomended" Type="int" />
+    <Property Name="Row" Type="int" />
+    <Property Name="Line" Type="int" />
+    <Property Name="PathImage" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_ConstraintToStudentTbl_PropertiesTbl">
+    <End Role="PropertiesTbl" Type="Self.PropertiesTbl" Multiplicity="0..1" />
+    <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PropertiesTbl">
+        <PropertyRef Name="PropId" />
+      </Principal>
+      <Dependent Role="ConstraintToStudentTbl">
+        <PropertyRef Name="PropId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ConstraintToStudentTbl_StudentTbl">
+    <End Role="StudentTbl" Type="Self.StudentTbl" Multiplicity="0..1" />
+    <End Role="ConstraintToStudentTbl" Type="Self.ConstraintToStudentTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StudentTbl">
+        <PropertyRef Name="StudentId" />
+      </Principal>
+      <Dependent Role="ConstraintToStudentTbl">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="RuthProjectModelStoreContainer">
+    <EntitySet Name="ClassTbl" EntityType="Self.ClassTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConstraintToStudentTbl" EntityType="Self.ConstraintToStudentTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PropertiesTbl" EntityType="Self.PropertiesTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentTbl" EntityType="Self.StudentTbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ConstraintToStudentTbl_PropertiesTbl" Association="Self.FK_ConstraintToStudentTbl_PropertiesTbl">
+      <End Role="PropertiesTbl" EntitySet="PropertiesTbl" />
+      <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ConstraintToStudentTbl_StudentTbl" Association="Self.FK_ConstraintToStudentTbl_StudentTbl">
+      <End Role="StudentTbl" EntitySet="StudentTbl" />
+      <End Role="ConstraintToStudentTbl" EntitySet="ConstraintToStudentTbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

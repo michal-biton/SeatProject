@@ -1,0 +1,164 @@
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\bll.dll
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\bll.pdb
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\dal.dll
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\dal.pdb
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\obj\Debug\bll.dll
+C:\Users\user1\Desktop\תכנות שנה ב\c#\ClassSeatsProject\ClassSeatsProject\bll\obj\Debug\bll.pdb
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\bll.dll
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\bll.pdb
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\dal.dll
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\dal.pdb
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\obj\Debug\bll.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\obj\Debug\bll.dll
+C:\Users\User\Downloads\jm_CXMVKebVzU-2xkW\ClassSeatsProject\bll\obj\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\dal.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\dal.pdb
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\obj\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\שונות\ClassSeatsProject\bll\obj\Debug\bll.pdb
+E:\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+E:\ClassSeatsProject\bll\bin\Debug\bll.dll
+E:\ClassSeatsProject\bll\bin\Debug\bll.pdb
+E:\ClassSeatsProject\bll\bin\Debug\dal.dll
+E:\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+E:\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+E:\ClassSeatsProject\bll\bin\Debug\dal.pdb
+E:\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+E:\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+E:\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+E:\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+E:\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+E:\ClassSeatsProject\bll\obj\Debug\bll.dll
+E:\ClassSeatsProject\bll\obj\Debug\bll.pdb
+E:\ClassSeatsProject\bll\obj\Debug\bll.csproj.AssemblyReference.cache
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.pdb
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\מיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.pdb
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\bll.dll
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\bll.pdb
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\dal.dll
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\dal.pdb
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+C:\Users\guess\Desktop\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\guess\Desktop\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+C:\Users\guess\Desktop\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+C:\Users\guess\Desktop\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+C:\Users\guess\Desktop\ClassSeatsProject\bll\obj\Debug\bll.dll
+C:\Users\guess\Desktop\ClassSeatsProject\bll\obj\Debug\bll.pdb
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\bll.dll
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\bll.pdb
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\dal.dll
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\dal.pdb
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+C:\Users\user1\Videos\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user1\Videos\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+C:\Users\user1\Videos\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+C:\Users\user1\Videos\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+C:\Users\user1\Videos\ClassSeatsProject\bll\obj\Debug\bll.dll
+C:\Users\user1\Videos\ClassSeatsProject\bll\obj\Debug\bll.pdb
+D:\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+D:\ClassSeatsProject\bll\bin\Debug\bll.dll
+D:\ClassSeatsProject\bll\bin\Debug\bll.pdb
+D:\ClassSeatsProject\bll\bin\Debug\dal.dll
+D:\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+D:\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+D:\ClassSeatsProject\bll\bin\Debug\dal.pdb
+D:\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+D:\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+D:\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+D:\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+D:\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+D:\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+D:\ClassSeatsProject\bll\obj\Debug\bll.dll
+D:\ClassSeatsProject\bll\obj\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\dal.dll
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\dal.pdb
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\obj\Debug\bll.dll
+L:\שנה ב\משרד החינוך\אנחנו\רות חבשוש\c#\פרויקט\ClassSeatsProject\bll\obj\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.dll
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\bll.pdb
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.dll
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.pdb
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csprojAssemblyReference.cache
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.dll
+L:\שנה ב\משרד החינוך\C#\הגשות שיבוץ מקומות\רות חבשוש, יעל קצב ומיכל ביטון\ClassSeatsProject\bll\obj\Debug\bll.pdb
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\obj\Debug\bll.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\obj\Debug\bll.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\bll.dll.config
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\bll.dll
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\bll.pdb
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\dal.dll
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\dal.pdb
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\dal.dll.config
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\obj\Debug\bll.csproj.CopyComplete
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\obj\Debug\bll.dll
+C:\Users\User\Desktop\פרוקיט סיום\ClassSeatsProject\bll\obj\Debug\bll.pdb
